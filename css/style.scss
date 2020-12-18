@@ -1,0 +1,90 @@
+@charset "UTF-8";
+*{
+    box-sizing:border-box;
+}
+img{
+    width: 100%;
+}
+main{
+    background: linear-gradient(45deg, #FFF 80%, #97ACD5); 
+}
+.luna-container{
+    padding: 0 5px;
+}
+.luna{
+    height: 600px;
+    position:relative;
+    &__title{
+        font-size: 19px;
+        position:absolute;
+        top:50px;
+        left:0;
+        text-align: center;
+        font-family:ヒラギノ明朝 Pro,'Sawarabi Mincho', sans-serif;
+        letter-spacing:0.5px;
+        color:rgba(0,0,0,0.8);
+    }
+    &__explain{
+        line-height:2.5em;
+        position:absolute;
+        top:100px;
+        left:0;
+        text-align: center;
+        font-family:ヒラギノ明朝 Pro,'Sawarabi Mincho', sans-serif;
+        letter-spacing:0.5px;
+        color:rgba(0,0,0,0.8);
+    }
+    &__image{
+        width: 85%;
+        margin-left: 56px;
+        animation: moon-fadein 4s ease 0s 1 normal;
+        @keyframes moon-fadein { 
+            0% {opacity: 0} 
+            100% {
+                opacity: 0.8;
+            } 
+        }
+    }
+    &__number{
+        font-weight: bold;
+        position:absolute;
+        top:580px;
+        left:64px;
+        color: rgba(0, 0, 0, 0.8);
+        font-family:ヒラギノ角ゴ Pro;
+    }
+    &__button{
+        position:absolute;
+        top:600px;
+        left:46px;
+    }
+    button{
+        color:#fff;
+        background-color:#0278BC;
+        border:none;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius:10px;
+    } 
+}
+.fortune{
+    max-width:750px;
+    margin:110px auto 40px;
+    padding: 0 20px;
+    &__title,&__ranking{
+        font-size: 20px;
+        font-family:ヒラギノ明朝 Pro,'Sawarabi Mincho', sans-serif;
+        text-align: center;
+    }
+    &__explain{
+        margin: 20px 0;
+        line-height:2em;
+    }
+}
+
+@media screen and (min-width:768px) { 
+   
+}
+@media screen and (min-width:1024px) { 
+    
+}

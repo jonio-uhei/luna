@@ -1,0 +1,196 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header img {
+  width: 183px;
+  margin: 0 auto;
+  display: block;
+}
+
+.luna-container {
+  height: 1000px;
+  background: linear-gradient(45deg, #FFF 40%, #97ACD5);
+}
+
+.luna-container__image {
+  position: absolute;
+  width: 85%;
+  top: 56px;
+  right: 0;
+  -webkit-animation: moon-fadein 4s ease 0s 1 normal;
+          animation: moon-fadein 4s ease 0s 1 normal;
+}
+
+@-webkit-keyframes moon-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes moon-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.luna {
+  width: 80%;
+  position: absolute;
+  top: 123px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.luna__explain {
+  width: 100%;
+}
+
+.luna__number {
+  width: 197px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: ヒラギノ角ゴ Pro;
+  font-size: 14px;
+}
+
+.luna__button {
+  background-color: #0278BC;
+  border: none;
+  padding: 10px 0;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 247px;
+  display: block;
+  margin-top: 5px;
+}
+
+.luna__wrap {
+  width: 250px;
+  margin: 60px auto;
+}
+
+.luna__link {
+  color: #fff;
+}
+
+.fortune {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0 30px 0;
+}
+
+.fortune__title, .fortune__ranking {
+  font-size: 20px;
+  font-family: ヒラギノ明朝 Pro,'Sawarabi Mincho', sans-serif;
+  text-align: center;
+}
+
+.fortune__ranking {
+  font-weight: bold;
+  color: #19448e;
+}
+
+.fortune__explain {
+  margin: 20px 0;
+  line-height: 2em;
+}
+
+.fortune__btn {
+  background-color: #19448e;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  header img {
+    width: 240px;
+  }
+  .luna-container__image {
+    width: 65%;
+    top: 74px;
+  }
+  .luna {
+    top: 20vh;
+    max-width: 550px;
+  }
+  .luna__explain {
+    width: 95%;
+  }
+  .luna__number {
+    font-size: 17px;
+    width: 240px;
+  }
+  .luna__wrap {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .fortune__title {
+    font-size: 25px;
+  }
+  .fortune__ranking {
+    font-size: 23px;
+  }
+  .fortune__explain {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header img {
+    width: 362px;
+  }
+  .luna-container {
+    height: 1170px;
+    background: linear-gradient(24deg, #FFF 40%, #97ACD5);
+  }
+  .luna-container__image {
+    width: 47%;
+    top: 111px;
+  }
+  .luna {
+    max-width: 600px;
+  }
+  .luna__number {
+    font-size: 20px;
+    width: 280px;
+  }
+  .luna__button {
+    width: 280px;
+    font-size: 25px;
+  }
+  .luna__wrap {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .fortune {
+    padding-bottom: 50px;
+  }
+  .fortune__title {
+    font-size: 27px;
+  }
+  .fortune__ranking {
+    font-size: 25px;
+  }
+  .fortune__explain {
+    font-size: 21px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
